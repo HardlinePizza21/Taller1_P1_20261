@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Reviews</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        header {
+            text-align: center;
+            color: white;
+            margin-bottom: 40px;
+        }
+        
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .movies-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+        
+        .movie-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .movie-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 24px rgba(0,0,0,0.3);
+        }
+        
+        .movie-poster {
+            width: 100%;
+            height: 200px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4em;
+        }
+        
+        .movie-info {
+            padding: 20px;
+        }
+        
+        .movie-title {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        
+        .rating {
+            color: #ffc107;
+            font-size: 1.1em;
+            margin-bottom: 10px;
+        }
+        
+        .movie-description {
+            color: #666;
+            font-size: 0.9em;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>🎬 {{hola}}</h1>
+            <p>Discover amazing movies</p>
+        </header>
+        
+        <div class="movies-grid">
+            <div class="movie-card">
+                <div class="movie-poster">🎥</div>
+                <div class="movie-info">
+                    <h2 class="movie-title">Movie Title</h2>
+                    <div class="rating">★★★★★ 9.0/10</div>
+                    <p class="movie-description">A fantastic film that captivates audiences.</p>
+                </div>
+            </div>
+            
+            <div class="movie-card">
+                <div class="movie-poster">🎭</div>
+                <div class="movie-info">
+                    <h2 class="movie-title">Another Film</h2>
+                    <div class="rating">★★★★☆ 8.5/10</div>
+                    <p class="movie-description">An entertaining experience worth watching.</p>
+                </div>
+            </div>
+            
+            <div class="movie-card">
+                <div class="movie-poster">🍿</div>
+                <div class="movie-info">
+                    <h2 class="movie-title">Great Cinema</h2>
+                    <div class="rating">★★★★★ 9.2/10</div>
+                    <p class="movie-description">A masterpiece of modern cinematography.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
